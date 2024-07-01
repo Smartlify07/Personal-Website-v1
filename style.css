@@ -111,7 +111,7 @@ a {
     }
   }
   .smartlify--intro--right {
-    /* width: 500px; */
+    /* width: 300px; */
   }
 
   .smartlify--intro--right img {
@@ -256,7 +256,7 @@ a {
 
 @media (width > 767px) and (width < 1096px) {
   .container {
-    max-width: 700px;
+    max-width: 750px;
   }
 
   .smartlify--intro {
