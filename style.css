@@ -111,11 +111,12 @@ a {
     }
   }
   .smartlify--intro--right {
-    width: 300px;
+    /* width: 500px; */
   }
 
   .smartlify--intro--right img {
-    object-fit: cover;
+    object-fit: contain;
+    height: auto;
   }
 }
 
