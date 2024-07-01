@@ -107,6 +107,7 @@ a {
     .slackDisplayName,
     .slackEmail {
       font-size: 1.2rem;
+      margin-bottom: 0.3rem;
     }
   }
   .smartlify--intro--right {
