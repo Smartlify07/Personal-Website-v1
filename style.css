@@ -24,7 +24,7 @@ button {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -115,7 +115,7 @@ a {
   }
 
   .smartlify--intro--right img {
-    object-fit: contain;
+    max-width: 100%;
     height: auto;
   }
 }
