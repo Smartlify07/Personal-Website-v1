@@ -23,7 +23,7 @@ const goals = [
   {
     id: 4,
     title: "Get a remote job as a frontend developer.",
-    description: "Apply for jobs massively",
+    description: "I really love the idea of travelling while working",
   },
   {
     id: 5,
@@ -47,12 +47,6 @@ const goals = [
     title: "Participate and win a hackathon",
     description:
       "Gain experience from hackathons, build projects with other developers.",
-  },
-  {
-    id: 9,
-    title: "Become a senior fullstack developer",
-    description:
-      "Gain experience and get the skillset required to obtain this title",
   },
 ];
 
