@@ -183,7 +183,7 @@ a {
     justify-content: center;
     gap: 1.4rem;
 
-    & li {
+    & a {
       cursor: pointer;
       border: 1px solid #eee;
       padding: 0.7rem 1rem;
@@ -191,11 +191,9 @@ a {
       transition: 0.2s all;
     }
 
-    & li:hover {
+    & a:hover {
       background-color: var(--primary);
-      & a {
-        color: #fff;
-      }
+      color: #fff;
     }
   }
 }

@@ -15,6 +15,8 @@ I created this personal website to display a list of my tech goals for the next 
 - CSS
 - Javascript
 
+![Desktop](./screenshots/personal-websitev1.png)
+
 ### Contact
 
 Anosike Obinna
