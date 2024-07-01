@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --primary: #084b83;
+  --secondary: #63adf2;
+  --black: #333;
+}
+
+body {
+  font-family: var(--poppins);
+  font-size: 16px;
+}
+
+button {
+  background-color: #ddd;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.highlight {
+  color: var(--secondary);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.smartlify--nav {
+  padding: 2rem 1.5rem;
+
+  & h1 {
+    color: var(--black);
+  }
+}
+
+.smartlify--nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav--toggle {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  gap: 1rem;
+  background: rgba(8, 75, 129, 0.5);
+  border-radius: 20px;
+  & i {
+    display: inline;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
+.smartlify--intro {
+  padding: 3rem 2rem;
+
+  & h1 {
+    font-size: 3rem;
+    color: var(--secondary);
+  }
+
+  & p {
+    color: #222;
+    width: 80%;
+  }
+
+  & .fa-slack {
+    color: rgb(238, 49, 49);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .smartlify--intro--left {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .display--date,
+    .slackDisplayName,
+    .slackEmail {
+      font-size: 1.2rem;
+    }
+  }
+  .smartlify--intro--right {
+    width: 300px;
+  }
+
+  .smartlify--intro--right img {
+    object-fit: cover;
+  }
+}
+
+.smartlify--goals {
+  padding: 3rem 2rem;
+  & h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  .goals--list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+  }
+}
+
+.smartlify--goal {
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 1.3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.04);
+
+  & h3 {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+  }
+
+  & p {
+    color: #333;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.smartlify--goal:hover {
+  transform: scale(105%);
+  background-color: var(--secondary);
+  & h3 {
+    color: #fff;
+  }
+
+  & p {
+    color: #fafafa;
+  }
+}
+
+.smartlify--footer {
+  padding: 2rem 1rem;
+
+  & .smartlify--footer--links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+
+    & li {
+      cursor: pointer;
+      border: 1px solid #eee;
+      padding: 0.7rem 1rem;
+      border-radius: 3px;
+      transition: 0.2s all;
+    }
+
+    & li:hover {
+      background-color: var(--primary);
+      & a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .smartlify--nav {
+    & h1 {
+      font-size: 1.1rem;
+    }
+  }
+  .smartlify--intro {
+    & h1 {
+      font-size: 2rem;
+    }
+
+    & p {
+      width: 100%;
+    }
+    .container {
+      flex-direction: column;
+    }
+
+    .smartlify--intro--left {
+      .display--date,
+      .slackDisplayName,
+      .slackEmail {
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      .display--date {
+        & p {
+          width: 100%;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .smartlify--goals {
+    & h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+      text-align: center;
+    }
+  }
+
+  .smartlify--goals .goals--list {
+    grid-template-columns: 1fr;
+  }
+
+  .smartlify--footer {
+    & .smartlify--footer--links {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (width > 767px) and (width < 1096px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .smartlify--intro {
+    & p {
+      width: 100%;
+    }
+    .smartlify--intro--left {
+      .display--date,
+      .slackDisplayName,
+      .slackEmail {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .smartlify--goals {
+    & h1 {
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .goals--list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (width > 1095px) and (width < 1280px) {
+  .container {
+    max-width: 950px;
+  }
+}
+@media (width > 1279px) {
+  .container {
+    max-width: 1050px;
+  }
+}

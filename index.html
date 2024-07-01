@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anosike Obinna 💻</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="smartlify--nav">
+      <div class="container">
+        <h1 class="smartlify--logo">Obinna Anosike</h1>
+        <button class="nav--toggle">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </nav>
+    <main class="smartlify--main">
+      <header class="smartlify--intro">
+        <div class="container">
+          <div class="smartlify--intro--left">
+            <h1>Hi, I'm Obinna 👋</h1>
+            <p>
+              I'm a <span class="highlight">frontend developer</span> with
+              proficient skills in HTML, CSS, Javascript and React.
+            </p>
+            <p>
+              I'm currently an intern at <a href="hng.tech/learn">HNG 11</a>
+            </p>
+
+            <div class="slack--data">
+              <p class="slackDisplayName" data-testId="slackDisplayName">
+                <i class="fa-brands fa-slack"></i> Slack username:
+                <span class="highlight">Anosike Obinna</span>
+              </p>
+
+              <p class="slackEmail" data-testId="slackEmail">
+                Slack Email:
+                <span class="highlight"> anosikeobinna895@gmail.com </span>
+              </p>
+            </div>
+
+            <div class="display--date">
+              <p class="currentTime" data-testId="currentTimeUTC"></p>
+              <p class="currentDay" data-testId="currentDay"></p>
+            </div>
+          </div>
+
+          <div class="smartlify--intro--right">
+            <img
+              data-testId="slackProfilePicture"
+              src="./images/me.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+
+      <section class="smartlify--goals">
+        <div class="container">
+          <h1>My goals for the next two years in the tech field</h1>
+          <div class="goals--list"></div>
+        </div>
+      </section>
+
+      <footer class="smartlify--footer">
+        <ul class="smartlify--footer--links">
+          <li>
+            <a data-testId="keywordLink" href="http://keyword.dog/"
+              >Keyword dog</a
+            >
+          </li>
+          <li><a href="http://scrapeanyweb.site/">Scrapeanyweb</a></li>
+          <li><a href="http://hng.tech/learn">HNG Learn</a></li>
+        </ul>
+      </footer>
+    </main>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="formatDay.js"></script>
+  </body>
+</html>
